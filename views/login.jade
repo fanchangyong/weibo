@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	div(align="center")
+		form(method="post",action="/login")
+			p
+				label UserName
+				input(name="username")
+			p
+				label Password
+				input(type="password",name="password")
+			p
+				input(type="submit" value="Login")
+			p
+				a(href="/") Home

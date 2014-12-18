@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1= title
+	- if(has_login){
+	p User name: #{user_name}
+	-}
+	- else{
+	div(align="center")
+		h1 You have to
+			a(href="/login") Login
+			|  or
+			a(href="/register")  Register!
+	-}
+
